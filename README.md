@@ -19,7 +19,7 @@ Am reusit sa impartim etapele proiectului pe mai multe branchuri si sa facem pul
 
 ## Design Patterns
 La SoundManager din folderul Scripts am folosit Singleton pentru ca muzica de background sa ramana de unde a ramas cand trecem la urmatorul nivel.    
-  ![Imagine Singleton](https://cdn.discordapp.com/attachments/891073655650529351/986684309773631498/Screenshot_from_2022-06-15_20-31-01.png)
+<br />![Imagine Singleton](https://cdn.discordapp.com/attachments/891073655650529351/986684309773631498/Screenshot_from_2022-06-15_20-31-01.png)
   
 ## Bug reporting
 Pentru buguri ne-am folosit de Issues din cadrul GitHub pentru a raporta si a rezolva anumite buguri din cadrul proiectului.  
