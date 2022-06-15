@@ -35,4 +35,4 @@ Aniimatiile, audio, backgrounds, scripts, sprites, spre exemplu, au fiecare fold
 
 ## Diagrama UML
 Mai jos se gaseste design-ul simplist al jocului nostru.
-<br />![Imagine UML](https://github.com/JarcaAndrei/Project-mds/blob/main/data.jpg)
+<br /><br />![Imagine UML](https://github.com/JarcaAndrei/Project-mds/blob/main/data.jpg)
