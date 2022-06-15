@@ -17,8 +17,10 @@ public class CameraController : MonoBehaviour
 
     }
 
-    public void MoveToNewRoom(Transform _newRoom){
-        currentPosX = _newRoom.position.x;   
+    public void MoveToNewRoom(Transform _newRoom, bool ok = false){
+        currentPosX = _newRoom.position.x;
+        if(ok == true)
+            _newRoom.GetComponent<Room>().ActivateRoom(true);   
     }
 
 }

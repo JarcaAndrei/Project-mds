@@ -14,6 +14,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
 
     [SerializeField] private LayerMask wallLayer;
+
+    [Header("SFX")]
+    [SerializeField]private AudioClip jumpSound;
     private void Awake(){
         body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
@@ -41,8 +44,13 @@ public class PlayerMovement : MonoBehaviour
             }
         }
         
-        if(Input.GetKey(KeyCode.Space))
+        if(Input.GetKey(KeyCode.Space)){
             body.velocity = new Vector2(body.velocity.x, speed);
+            
+            
+            if(Input.GetKeyDown(KeyCode.Space))
+                SoundManager.instance.PlaySound(jumpSound);
+        }
 
         anim.SetBool("run", horizontalInput != 0);
 

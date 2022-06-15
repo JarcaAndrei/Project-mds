@@ -16,6 +16,13 @@ public class Health : MonoBehaviour
     [SerializeField] private float iFramesDuration;
     [SerializeField] private int numberOfFlashes;
     private SpriteRenderer spriteRend;
+
+
+    [Header("Death Sound")]
+    [SerializeField] private AudioClip deathSound;
+    [SerializeField] private AudioClip hurtSound;
+    private bool invulnerable;
+
     private void Awake(){
         currentHealth = startingHealth;
         anim = GetComponent<Animator>();
@@ -23,17 +30,30 @@ public class Health : MonoBehaviour
     }
 
     public void TakeDamage(float _damage){
+
+        if(invulnerable) return;
+
         currentHealth = Mathf.Clamp(currentHealth - _damage, 0, startingHealth);
 
         if(currentHealth > 0){
             anim.SetTrigger("hurt");
             StartCoroutine(Invulnerability());
+            SoundManager.instance.PlaySound(hurtSound);
         }
         else{
             if(!dead){
                 anim.SetTrigger("die");
-                GetComponent<PlayerMovement>().enabled = false;
+                if(GetComponent<PlayerMovement>() != null)
+                    GetComponent<PlayerMovement>().enabled = false;
+
+                if(GetComponentInParent<EnemyPatrol>() != null)
+                    GetComponentInParent<EnemyPatrol>().enabled = false;
+                
+                if(GetComponent<Enemy>() != null)
+                    GetComponent<Enemy>().enabled = false;
+
                 dead = true;
+                SoundManager.instance.PlaySound(deathSound);
             }
         }
     }
@@ -42,7 +62,27 @@ public class Health : MonoBehaviour
         currentHealth = Mathf.Clamp(currentHealth + _value, 0, startingHealth);
     }
 
+    public void Respawn(){
+        dead = false;
+        AddHealth(startingHealth);
+        anim.ResetTrigger("die");
+        anim.Play("idle");
+        StartCoroutine(Invulnerability());
+
+        if(GetComponent<PlayerMovement>() != null)
+            GetComponent<PlayerMovement>().enabled = true;
+
+        // if(GetComponentInParent<EnemyPatrol>() != null)
+        //     GetComponentInParent<EnemyPatrol>().enabled = true;
+                
+        // if(GetComponent<Enemy>() != null)
+        //     GetComponent<Enemy>().enabled = true;
+    }
+
     private IEnumerator Invulnerability(){
+
+        invulnerable = true;
+
         Physics2D.IgnoreLayerCollision(8,9, true);
         for(int i = 0; i < numberOfFlashes; i++){
             spriteRend.color = new Color(1,0,0,0.5f);
@@ -51,6 +91,8 @@ public class Health : MonoBehaviour
             yield return new WaitForSeconds(iFramesDuration / (numberOfFlashes * 2));
         }
         Physics2D.IgnoreLayerCollision(8,9, false);
+    
+        invulnerable = false;
     }
 
 }
