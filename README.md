@@ -20,3 +20,17 @@ Am reusit sa impartim etapele proiectului pe mai multe branchuri si sa facem pul
 ## Design Patterns
 La SoundManager din folderul Scripts am folosit Singleton pentru ca muzica de background sa ramana de unde a ramas cand trecem la urmatorul nivel.    
   ![Imagine Singleton](https://cdn.discordapp.com/attachments/891073655650529351/986684309773631498/Screenshot_from_2022-06-15_20-31-01.png)
+  
+## Bug reporting
+Pentru buguri ne-am folosit de Issues din cadrul GitHub pentru a raporta si a rezolva anumite buguri din cadrul proiectului.  
+Pentru a vedea bugurile se poate accesa acest [link](https://github.com/JarcaAndrei/Project-mds/issues)  
+Am reusit sa le rezolvam pe toate cele care au fost detectate.:)
+
+## Refactoring and Code Standards
+Pentru Refactoring si Code Standards ne-am folosit de documentatia oficiala de la Unity pentru a rearanja folderele dupa primele etape.  
+Initial, le aveam mai dezordonat, dar dupa o privire mai in detaliu pe asupra acestei documentatii am reusit sa le reordonam dupa un anume stil.  
+Aniimatiile, audio, backgrounds, scripts, sprites, spre exemplu, au fiecare folder separat.  
+<br />![Imagine Foldere](https://cdn.discordapp.com/attachments/891073655650529351/986689361309495316/Screenshot_from_2022-06-15_20-47-19.png)  
+<br />![Imagine Hierarchy](https://cdn.discordapp.com/attachments/891073655650529351/986689710653079562/Screenshot_from_2022-06-15_20-52-27.png)
+
+
