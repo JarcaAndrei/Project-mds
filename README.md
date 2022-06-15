@@ -26,6 +26,9 @@ Pentru buguri ne-am folosit de Issues din cadrul GitHub pentru a raporta si a re
 Pentru a vedea bugurile se poate accesa acest [link](https://github.com/JarcaAndrei/Project-mds/issues)  
 Am reusit sa le rezolvam pe toate cele care au fost detectate.:)
 
+## Diagrama UML
+Pe linkul acesta se gaseste diagrama UML a jocului nostru.[apasa](https://github.com/JarcaAndrei/Project-mds/blob/main/data.jpg)
+
 ## Refactoring and Code Standards
 Pentru Refactoring si Code Standards ne-am folosit de documentatia oficiala de la Unity pentru a rearanja folderele dupa primele etape.  
 Initial, le aveam mai dezordonat, dar dupa o privire mai in detaliu pe asupra acestei documentatii am reusit sa le reordonam dupa un anume stil.  
