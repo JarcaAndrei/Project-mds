@@ -34,7 +34,7 @@ Aniimatiile, audio, backgrounds, scripts, sprites, spre exemplu, au fiecare fold
 <br />![Imagine Hierarchy](https://cdn.discordapp.com/attachments/891073655650529351/986689710653079562/Screenshot_from_2022-06-15_20-52-27.png)
 
 ## Demo joc
-Pentru a viziona demou-ul jocului, accsati acest [link](https://drive.google.com/file/d/1m8kDnM2Qbs8namWYIMCaKVaQaSIsXJ_s/view?usp=sharing).
+Pentru a viziona demo-ul jocului, accsati acest [link](https://drive.google.com/file/d/1m8kDnM2Qbs8namWYIMCaKVaQaSIsXJ_s/view?usp=sharing).
 
 ## Testing
 Pentru testare am facut in mare parte manual, trial and error, cat si, am incercat sa facem cu Unity Test Runner cateva teste generale(gen pentru miscarea caracterului, stanga, dreapta, jumpul, atacul, pentru meniu, cand apasam pe buton daca face tranzitia cum trebuie, cat si selectarea nivelelor).
