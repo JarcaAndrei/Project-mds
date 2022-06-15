@@ -32,3 +32,7 @@ Initial, le aveam mai dezordonat, dar dupa o privire mai in detaliu pe asupra ac
 Aniimatiile, audio, backgrounds, scripts, sprites, spre exemplu, au fiecare folder separat.  
 <br />![Imagine Foldere](https://cdn.discordapp.com/attachments/891073655650529351/986689361309495316/Screenshot_from_2022-06-15_20-47-19.png)  
 <br />![Imagine Hierarchy](https://cdn.discordapp.com/attachments/891073655650529351/986689710653079562/Screenshot_from_2022-06-15_20-52-27.png)
+
+## Diagrama UML
+Mai jos se gaseste design-ul simplist al jocului nostru.
+<br />![Imagine UML](https://ibb.co/3CrS9CY)
